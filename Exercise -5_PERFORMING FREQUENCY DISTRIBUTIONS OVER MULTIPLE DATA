@@ -1,0 +1,15 @@
+PROGRAM
+(i) ungrouped frequency distributions
+import pandas as pd
+df = pd.DataFrame({
+    'ID':['1','2','3','4','5','6'], 'Product_name':['alex','bob','cathy','doge','eric','fred'],'State':['Taminadu','Tamilnadu','Taminadu','Andra','Madhyapradesh','Orissa'],'Salescount':['1000','2000','3500','450','560','250']})
+df
+
+
+
+import matplotlib.pyplot as plt                 
+plt.hist(df['State'])
+plt.ylabel('Frequency count')
+plt.xlabel('Data');
+plt.title('My histogram')
+plt.show()
